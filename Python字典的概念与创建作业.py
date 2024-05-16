@@ -14,7 +14,6 @@ total_scores = {name: sum(subject_scores.values()) for name, subject_scores in s
 print(total_scores)
 # 找出总分最高的学生
 max_score_student = max(total_scores, key=total_scores.get)
-
 # 输出每个学生的总分
 for name, total_score in total_scores.items():
     print(f"{name}的总分为：{total_score}")
